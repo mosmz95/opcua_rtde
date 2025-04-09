@@ -1,7 +1,7 @@
 # opcua_rtde
 This repository creates an OPC-UA server to share data of UR5e robot. The information model of the robot has been created and data of robot has been fed to the server through Real Time Data Echange (RTDE) library of Universal Robot.
 
-The information model of robot can be written either (i)directly, using the tutorial provided by [Open62541 implementaion in C99](https://www.open62541.org/doc/v1.4.10/tutorial_server_object.html), you can find the ur5e model in robottyp.h or (ii) writing the information model in the xml format and then using an compiler to generate the nodeset2.xml format which can be used by the server. Below the steps to compile the robotmodel.xml have been introduced.
+The information model of robot can be written either (i) directly, using the tutorial provided by [Open62541 implementaion in C99](https://www.open62541.org/doc/v1.4.10/tutorial_server_object.html), you can find the ur5e model in robottype.h or (ii) writing the information model in the xml format and then using a compiler to generate the nodeset2.xml format which can be used by the server. Below, the steps to compile the robotmodel.xml have been mentioned.
 
 
 
