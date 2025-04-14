@@ -17,14 +17,15 @@
     </Namespaces>
 
     <ObjectType SymbolicName="ROBOT:JointType" BaseType="ua:BaseObjectType">
+
         <DisplayName>JointType</DisplayName>
         <Description>Represents a single joint in a robot</Description>
         <Children>
-            <Property SymbolicName="JointName" DataType="ua:String" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Position" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Velocity" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Current" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Temperature" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
+            <Property SymbolicName="ROBOT:JointName" DataType="ua:String" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Position" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Velocity" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Current" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Temperature" DataType="ua:Double" ValueRank="Scalar" ModellingRule="Mandatory" />
         </Children>
     </ObjectType>
 
@@ -32,9 +33,9 @@
         <DisplayName>TCPType</DisplayName>
         <Description>Tool Center Point values for a robot</Description>
         <Children>
-            <Variable SymbolicName="Position" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Speed" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
-            <Variable SymbolicName="Force" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Position" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Speed" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
+            <Variable SymbolicName="ROBOT:Force" DataType="ua:Double" ValueRank="Array" ArrayDimensions="6" ModellingRule="Mandatory" />
         </Children>
     </ObjectType>
 
@@ -42,8 +43,8 @@
         <DisplayName>RobotType</DisplayName>
         <Description>Represents a robot with manufacturer, model, joints and TCP</Description>
         <Children>
-            <Property SymbolicName="ManufacturerName" DataType="ua:String" ModellingRule="Mandatory" />
-            <Property SymbolicName="ModelName" DataType="ua:String" ModellingRule="Mandatory" />
+            <Property SymbolicName="ROBOT:ManufacturerName" DataType="ua:String" ModellingRule="Mandatory" />
+            <Property SymbolicName="ROBOT:ModelName" DataType="ua:String" ModellingRule="Mandatory" />
             <!-- <Object SymbolicName="Joints" TypeName="robot:JointType" ValueRank="Array" ModellingRule="Mandatory" /> -->
             <!-- <Object SymbolicName="JointsSet" TypeDefinition="ua:FolderType" ModellingRule="Mandatory" />
             <Object SymbolicName="TCP" TypeName="robot:TCPType" ModellingRule="Mandatory" /> -->
@@ -71,11 +72,11 @@
         </References>
         <DisplayName>Base</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -88,11 +89,11 @@
         </References>
         <DisplayName>Shoulder</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -105,11 +106,11 @@
         </References>
         <DisplayName>Elbow</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -120,13 +121,14 @@
                 <TargetId>ROBOT:JointsSet</TargetId>
             </Reference>
         </References>
+
         <DisplayName>Wrist1</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -139,11 +141,11 @@
         </References>
         <DisplayName>Wrist2</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -156,11 +158,11 @@
         </References>
         <DisplayName>Wrist3</DisplayName>
         <Children>
-            <Property SymbolicName="JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
+            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
     </Object>
 
@@ -168,7 +170,7 @@
     <Object SymbolicName="ROBOT:TCP" TypeDefinition="ROBOT:TCPType">
         <DisplayName>TCP</DisplayName>
         <Children>
-            <Variable SymbolicName="Position">
+            <Variable SymbolicName="ROBOT:Position">
                 <Value>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
@@ -178,7 +180,7 @@
                     <uax:Double>0.0</uax:Double>
                 </Value>
             </Variable>
-            <Variable SymbolicName="Speed">
+            <Variable SymbolicName="ROBOT:Speed">
                 <Value>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
@@ -188,7 +190,7 @@
                     <uax:Double>0.0</uax:Double>
                 </Value>
             </Variable>
-            <Variable SymbolicName="Force">
+            <Variable SymbolicName="ROBOT:Force">
                 <Value>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
@@ -219,8 +221,8 @@
         </References>
 
         <Children>
-            <Property SymbolicName="ManufacturerName"><Value><uax:String>Universal Robots</uax:String></Value></Property>
-            <Property SymbolicName="ModelName"><Value><uax:String>UR5e</uax:String></Value></Property>
+            <Property SymbolicName="ROBOT:ManufacturerName"><Value><uax:String>Universal Robots</uax:String></Value></Property>
+            <Property SymbolicName="ROBOT:ModelName"><Value><uax:String>UR5e</uax:String></Value></Property>
         </Children>
     </Object>
 
