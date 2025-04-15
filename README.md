@@ -22,9 +22,9 @@ sudo docker run \
 	   /model/src/robotmodel robot /model/src/Published
 ```
 Therefore, the corresponding robot.NodeSet2.xml has been generated and can be used to run your opcua server. It is noteworthy that you may need to take further steps depending on your server implementation vendors. 
-Since we are using the open62541 implemetation of opcua, we proceed as followed:
+Since we are using the open62541 implemetation of opcua, we proceed as followes:
 
-Having the generated robot.NodeSet2.xml, one can use the node set compiler to get the C implementation of the robot model using open62541, see the [official tutorial](https://www.open62541.org/doc/v1.4.10/nodeset_compiler.html).
+Having the generated robot.NodeSet2.xml, one can use the node set compiler to get the C implementation of the robot model using open62541 node set compiler, see the [official tutorial](https://www.open62541.org/doc/v1.4.10/nodeset_compiler.html).
 
 ```bash
 python3 ./nodeset_compiler.py --types-array=UA_TYPES --existing ../../deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml --xml robot.NodeSet2.xml robot
