@@ -45,31 +45,14 @@
         <Children>
             <Property SymbolicName="ROBOT:ManufacturerName" DataType="ua:String" ModellingRule="Mandatory" />
             <Property SymbolicName="ROBOT:ModelName" DataType="ua:String" ModellingRule="Mandatory" />
-            <!-- <Object SymbolicName="Joints" TypeName="robot:JointType" ValueRank="Array" ModellingRule="Mandatory" /> -->
-            <!-- <Object SymbolicName="JointsSet" TypeDefinition="ua:FolderType" ModellingRule="Mandatory" />
-            <Object SymbolicName="TCP" TypeName="robot:TCPType" ModellingRule="Mandatory" /> -->
         </Children>
     </ObjectType>
     
-    <!-- A container is defined to hold list of joints -->
-    <Object SymbolicName="ROBOT:JointsSet" TypeDefinition="ua:BaseObjectType">
-        <Description>Contains all instances of animals</Description>
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ua:ObjectsFolder</TargetId>
-            </Reference>
-        </References>
-    </Object>
+    
 
     <!-- Instantaition of joints -->
     <Object SymbolicName="ROBOT:Base" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+        
         <DisplayName>Base</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -81,12 +64,7 @@
     </Object>
 
     <Object SymbolicName="ROBOT:Shoulder" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Shoulder</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -98,12 +76,7 @@
     </Object>
 
     <Object SymbolicName="ROBOT:Elbow" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Elbow</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -115,13 +88,7 @@
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist1" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
-
+        
         <DisplayName>Wrist1</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -133,12 +100,7 @@
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist2" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+        
         <DisplayName>Wrist2</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -150,12 +112,7 @@
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist3" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Wrist3</DisplayName>
         <Children>
             <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
@@ -164,6 +121,37 @@
             <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
             <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
         </Children>
+    </Object>
+    
+    <!-- A container is defined to hold list of joints -->
+    <Object SymbolicName="ROBOT:JointsSet" TypeDefinition="ua:BaseObjectType">
+        <Description>Contains all instances of animals</Description>
+        <References>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Base</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Shoulder</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Elbow</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist1</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist2</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist3</TargetId>
+            </Reference>
+        </References>
     </Object>
 
     <!-- Instantaition of  tool center pose -->
@@ -210,6 +198,11 @@
         <Description>Universal Robots UR5e model</Description>
 
         <References>
+            <!-- Attach ur5e object to the root folder in serverspace -->
+            <Reference IsInverse="false"> 
+                <ReferenceType>ua:Organizes</ReferenceType>
+                <TargetId>ua:ObjectsFolder</TargetId>
+            </Reference>
             <Reference IsInverse="false">
                 <ReferenceType>ua:HasComponent</ReferenceType>
                 <TargetId>ROBOT:JointsSet</TargetId>
