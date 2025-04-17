@@ -56,7 +56,7 @@ void start_opcua_server() {
 // The following functions are defined for updating the robot's data in run time
 
 void update_variable(UA_Server *server, UA_NodeId parent, const char *childName, UA_Double value) {
-    printf("Updating variable %s under parent ns=%d, id=%d\n", childName, parent.namespaceIndex, parent.identifier.numeric);
+    // printf("Updating variable %s under parent ns=%d, id=%d\n", childName, parent.namespaceIndex, parent.identifier.numeric);
 
     UA_BrowsePath path;
     UA_BrowsePath_init(&path);
@@ -202,7 +202,7 @@ void update_ur5e_state(
         jointPath.relativePath.elements[0].referenceTypeId = UA_NODEID_NUMERIC(0, UA_NS0ID_HASCOMPONENT);
         jointPath.relativePath.elements[0].isInverse = false;
         jointPath.relativePath.elements[0].includeSubtypes = false;
-        printf("Updating state for joint: %s\n", jointNames[i]);
+        // printf("Updating state for joint: %s\n", jointNames[i]);
 
         UA_QualifiedName qn = UA_QUALIFIEDNAME(1, jointNames[i]);
         UA_QualifiedName_copy(&qn, &jointPath.relativePath.elements[0].targetName); 
@@ -221,17 +221,17 @@ void update_ur5e_state(
         UA_QualifiedName_clear(&jointPath.relativePath.elements[0].targetName);
         UA_BrowsePath_clear(&jointPath);
         UA_BrowsePathResult_clear(&jointResult);
-        printf("Error:before3\n");
+        // printf("Error:before3\n");
 
     }
 
-    printf("Error:before4\n");
+    // printf("Error:before4\n");
 
     // UA_BrowsePath_clear(&jointsPath);
-    printf("Error:before6\n");
+    // printf("Error:before6\n");
 
     UA_BrowsePathResult_clear(&jointsResult);
-    printf("Error:before5\n");
+    // printf("Error:before5\n");
 
     // Step 3: Find "TCP" node
     UA_NodeId tcpNode;
@@ -259,16 +259,16 @@ void update_ur5e_state(
         UA_BrowsePath_clear(&tcpPath);
         return;
     }
-    printf("Error:before\n");
+    // printf("Error:before\n");
 
     tcpNode = tcpResult.targets[0].targetId.nodeId;
 
-    printf("Error:before\n");
+    // printf("Error:before\n");
 
     update_tcp_array(server, tcpNode, "Pose", tcp_pose);
     update_tcp_array(server, tcpNode, "Speed", tcp_speed);
     update_tcp_array(server, tcpNode, "Force", tcp_force);
-    printf("Error:after\n");
+    // printf("Error:after\n");
 
     // UA_BrowsePath_clear(&tcpPath);
 
