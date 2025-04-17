@@ -57,8 +57,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15057_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15057_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15057_variant_DataContents);
+*variablenode_ns_1_i_15057_variant_DataContents = UA_STRING_ALLOC("UR5e");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15057_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "ModelName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15057LU),UA_NODEID_NUMERIC(ns[1], 15055LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "ModelName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15057_variant_DataContents);
 return retVal;
 }
 
@@ -77,8 +83,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15056_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15056_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15056_variant_DataContents);
+*variablenode_ns_1_i_15056_variant_DataContents = UA_STRING_ALLOC("Universal Robots");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15056_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "ManufacturerName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15056LU),UA_NODEID_NUMERIC(ns[1], 15055LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "ManufacturerName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15056_variant_DataContents);
 return retVal;
 }
 
@@ -95,7 +107,7 @@ attr.displayName = UA_LOCALIZEDTEXT("", "JointsSet");
 
 #ifdef UA_ENABLE_NODESET_COMPILER_DESCRIPTIONS
 
-attr.description = UA_LOCALIZEDTEXT("", "Contains all instances of animals");
+attr.description = UA_LOCALIZEDTEXT("", "Contains all instances of joints");
 
 #endif
 
@@ -192,14 +204,17 @@ UA_VariableAttributes attr = UA_VariableAttributes_default;
 attr.minimumSamplingInterval = 0.000000;
 attr.userAccessLevel = 1;
 attr.accessLevel = 1;
-attr.valueRank = 1;
-attr.arrayDimensionsSize = 1;
-UA_UInt32 arrayDimensions[1];
-arrayDimensions[0] = 6;
-attr.arrayDimensions = &arrayDimensions[0];
+/* Value rank inherited */
+attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15054_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15054_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15054_variant_DataContents);
+*variablenode_ns_1_i_15054_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15054_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Force");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15054LU),UA_NODEID_NUMERIC(ns[1], 15051LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Force"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15054_variant_DataContents);
 return retVal;
 }
 
@@ -215,14 +230,17 @@ UA_VariableAttributes attr = UA_VariableAttributes_default;
 attr.minimumSamplingInterval = 0.000000;
 attr.userAccessLevel = 1;
 attr.accessLevel = 1;
-attr.valueRank = 1;
-attr.arrayDimensionsSize = 1;
-UA_UInt32 arrayDimensions[1];
-arrayDimensions[0] = 6;
-attr.arrayDimensions = &arrayDimensions[0];
+/* Value rank inherited */
+attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15053_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15053_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15053_variant_DataContents);
+*variablenode_ns_1_i_15053_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15053_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Speed");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15053LU),UA_NODEID_NUMERIC(ns[1], 15051LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Speed"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15053_variant_DataContents);
 return retVal;
 }
 
@@ -238,14 +256,17 @@ UA_VariableAttributes attr = UA_VariableAttributes_default;
 attr.minimumSamplingInterval = 0.000000;
 attr.userAccessLevel = 1;
 attr.accessLevel = 1;
-attr.valueRank = 1;
-attr.arrayDimensionsSize = 1;
-UA_UInt32 arrayDimensions[1];
-arrayDimensions[0] = 6;
-attr.arrayDimensions = &arrayDimensions[0];
+/* Value rank inherited */
+attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15052_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15052_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15052_variant_DataContents);
+*variablenode_ns_1_i_15052_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15052_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15052LU),UA_NODEID_NUMERIC(ns[1], 15051LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15052_variant_DataContents);
 return retVal;
 }
 
@@ -371,8 +392,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15049_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15049_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15049_variant_DataContents);
+*variablenode_ns_1_i_15049_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15049_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15049LU),UA_NODEID_NUMERIC(ns[1], 15044LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15049_variant_DataContents);
 return retVal;
 }
 
@@ -391,8 +418,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15048_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15048_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15048_variant_DataContents);
+*variablenode_ns_1_i_15048_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15048_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15048LU),UA_NODEID_NUMERIC(ns[1], 15044LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15048_variant_DataContents);
 return retVal;
 }
 
@@ -411,8 +444,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15047_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15047_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15047_variant_DataContents);
+*variablenode_ns_1_i_15047_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15047_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15047LU),UA_NODEID_NUMERIC(ns[1], 15044LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15047_variant_DataContents);
 return retVal;
 }
 
@@ -431,8 +470,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15046_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15046_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15046_variant_DataContents);
+*variablenode_ns_1_i_15046_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15046_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15046LU),UA_NODEID_NUMERIC(ns[1], 15044LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15046_variant_DataContents);
 return retVal;
 }
 
@@ -451,8 +496,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15045_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15045_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15045_variant_DataContents);
+*variablenode_ns_1_i_15045_variant_DataContents = UA_STRING_ALLOC("Wrist3 Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15045_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15045LU),UA_NODEID_NUMERIC(ns[1], 15044LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15045_variant_DataContents);
 return retVal;
 }
 
@@ -485,8 +536,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15043_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15043_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15043_variant_DataContents);
+*variablenode_ns_1_i_15043_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15043_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15043LU),UA_NODEID_NUMERIC(ns[1], 15038LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15043_variant_DataContents);
 return retVal;
 }
 
@@ -505,8 +562,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15042_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15042_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15042_variant_DataContents);
+*variablenode_ns_1_i_15042_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15042_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15042LU),UA_NODEID_NUMERIC(ns[1], 15038LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15042_variant_DataContents);
 return retVal;
 }
 
@@ -525,8 +588,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15041_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15041_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15041_variant_DataContents);
+*variablenode_ns_1_i_15041_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15041_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15041LU),UA_NODEID_NUMERIC(ns[1], 15038LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15041_variant_DataContents);
 return retVal;
 }
 
@@ -545,8 +614,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15040_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15040_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15040_variant_DataContents);
+*variablenode_ns_1_i_15040_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15040_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15040LU),UA_NODEID_NUMERIC(ns[1], 15038LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15040_variant_DataContents);
 return retVal;
 }
 
@@ -565,8 +640,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15039_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15039_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15039_variant_DataContents);
+*variablenode_ns_1_i_15039_variant_DataContents = UA_STRING_ALLOC("Wrist2 Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15039_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15039LU),UA_NODEID_NUMERIC(ns[1], 15038LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15039_variant_DataContents);
 return retVal;
 }
 
@@ -599,8 +680,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15037_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15037_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15037_variant_DataContents);
+*variablenode_ns_1_i_15037_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15037_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15037LU),UA_NODEID_NUMERIC(ns[1], 15032LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15037_variant_DataContents);
 return retVal;
 }
 
@@ -619,8 +706,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15036_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15036_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15036_variant_DataContents);
+*variablenode_ns_1_i_15036_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15036_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15036LU),UA_NODEID_NUMERIC(ns[1], 15032LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15036_variant_DataContents);
 return retVal;
 }
 
@@ -639,8 +732,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15035_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15035_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15035_variant_DataContents);
+*variablenode_ns_1_i_15035_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15035_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15035LU),UA_NODEID_NUMERIC(ns[1], 15032LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15035_variant_DataContents);
 return retVal;
 }
 
@@ -659,8 +758,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15034_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15034_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15034_variant_DataContents);
+*variablenode_ns_1_i_15034_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15034_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15034LU),UA_NODEID_NUMERIC(ns[1], 15032LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15034_variant_DataContents);
 return retVal;
 }
 
@@ -679,8 +784,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15033_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15033_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15033_variant_DataContents);
+*variablenode_ns_1_i_15033_variant_DataContents = UA_STRING_ALLOC("Wrist1 Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15033_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15033LU),UA_NODEID_NUMERIC(ns[1], 15032LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15033_variant_DataContents);
 return retVal;
 }
 
@@ -713,8 +824,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15031_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15031_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15031_variant_DataContents);
+*variablenode_ns_1_i_15031_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15031_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15031LU),UA_NODEID_NUMERIC(ns[1], 15026LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15031_variant_DataContents);
 return retVal;
 }
 
@@ -733,8 +850,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15030_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15030_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15030_variant_DataContents);
+*variablenode_ns_1_i_15030_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15030_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15030LU),UA_NODEID_NUMERIC(ns[1], 15026LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15030_variant_DataContents);
 return retVal;
 }
 
@@ -753,8 +876,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15029_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15029_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15029_variant_DataContents);
+*variablenode_ns_1_i_15029_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15029_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15029LU),UA_NODEID_NUMERIC(ns[1], 15026LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15029_variant_DataContents);
 return retVal;
 }
 
@@ -773,8 +902,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15028_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15028_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15028_variant_DataContents);
+*variablenode_ns_1_i_15028_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15028_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15028LU),UA_NODEID_NUMERIC(ns[1], 15026LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15028_variant_DataContents);
 return retVal;
 }
 
@@ -793,8 +928,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15027_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15027_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15027_variant_DataContents);
+*variablenode_ns_1_i_15027_variant_DataContents = UA_STRING_ALLOC("Elbow Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15027_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15027LU),UA_NODEID_NUMERIC(ns[1], 15026LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15027_variant_DataContents);
 return retVal;
 }
 
@@ -827,8 +968,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15025_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15025_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15025_variant_DataContents);
+*variablenode_ns_1_i_15025_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15025_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15025LU),UA_NODEID_NUMERIC(ns[1], 15020LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15025_variant_DataContents);
 return retVal;
 }
 
@@ -847,8 +994,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15024_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15024_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15024_variant_DataContents);
+*variablenode_ns_1_i_15024_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15024_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15024LU),UA_NODEID_NUMERIC(ns[1], 15020LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15024_variant_DataContents);
 return retVal;
 }
 
@@ -867,8 +1020,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15023_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15023_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15023_variant_DataContents);
+*variablenode_ns_1_i_15023_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15023_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15023LU),UA_NODEID_NUMERIC(ns[1], 15020LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15023_variant_DataContents);
 return retVal;
 }
 
@@ -887,8 +1046,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15022_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15022_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15022_variant_DataContents);
+*variablenode_ns_1_i_15022_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15022_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15022LU),UA_NODEID_NUMERIC(ns[1], 15020LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15022_variant_DataContents);
 return retVal;
 }
 
@@ -907,8 +1072,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15021_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15021_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15021_variant_DataContents);
+*variablenode_ns_1_i_15021_variant_DataContents = UA_STRING_ALLOC("Shoulder Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15021_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15021LU),UA_NODEID_NUMERIC(ns[1], 15020LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15021_variant_DataContents);
 return retVal;
 }
 
@@ -941,8 +1112,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15019_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15019_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15019_variant_DataContents);
+*variablenode_ns_1_i_15019_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15019_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Temperature");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15019LU),UA_NODEID_NUMERIC(ns[1], 15014LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Temperature"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15019_variant_DataContents);
 return retVal;
 }
 
@@ -961,8 +1138,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15018_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15018_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15018_variant_DataContents);
+*variablenode_ns_1_i_15018_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15018_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Current");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15018LU),UA_NODEID_NUMERIC(ns[1], 15014LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Current"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15018_variant_DataContents);
 return retVal;
 }
 
@@ -981,8 +1164,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15017_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15017_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15017_variant_DataContents);
+*variablenode_ns_1_i_15017_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15017_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Velocity");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15017LU),UA_NODEID_NUMERIC(ns[1], 15014LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Velocity"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15017_variant_DataContents);
 return retVal;
 }
 
@@ -1001,8 +1190,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 11LU);
+UA_Double *variablenode_ns_1_i_15016_variant_DataContents =  UA_Double_new();
+if (!variablenode_ns_1_i_15016_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_Double_init(variablenode_ns_1_i_15016_variant_DataContents);
+*variablenode_ns_1_i_15016_variant_DataContents = (UA_Double) 0;
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15016_variant_DataContents, &UA_TYPES[UA_TYPES_DOUBLE]);
 attr.displayName = UA_LOCALIZEDTEXT("", "Position");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15016LU),UA_NODEID_NUMERIC(ns[1], 15014LU),UA_NODEID_NUMERIC(ns[0], 47LU),UA_QUALIFIEDNAME(ns[1], "Position"),UA_NODEID_NUMERIC(ns[0], 63LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_Double_delete(variablenode_ns_1_i_15016_variant_DataContents);
 return retVal;
 }
 
@@ -1021,8 +1216,14 @@ attr.accessLevel = 1;
 /* Value rank inherited */
 attr.valueRank = -2;
 attr.dataType = UA_NODEID_NUMERIC(ns[0], 12LU);
+UA_String *variablenode_ns_1_i_15015_variant_DataContents =  UA_String_new();
+if (!variablenode_ns_1_i_15015_variant_DataContents) return UA_STATUSCODE_BADOUTOFMEMORY;
+UA_String_init(variablenode_ns_1_i_15015_variant_DataContents);
+*variablenode_ns_1_i_15015_variant_DataContents = UA_STRING_ALLOC("Base Actuator");
+UA_Variant_setScalar(&attr.value, variablenode_ns_1_i_15015_variant_DataContents, &UA_TYPES[UA_TYPES_STRING]);
 attr.displayName = UA_LOCALIZEDTEXT("", "JointName");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_VARIABLE,UA_NODEID_NUMERIC(ns[1], 15015LU),UA_NODEID_NUMERIC(ns[1], 15014LU),UA_NODEID_NUMERIC(ns[0], 46LU),UA_QUALIFIEDNAME(ns[1], "JointName"),UA_NODEID_NUMERIC(ns[0], 68LU),(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_VARIABLEATTRIBUTES],NULL, NULL);
+UA_String_delete(variablenode_ns_1_i_15015_variant_DataContents);
 return retVal;
 }
 
