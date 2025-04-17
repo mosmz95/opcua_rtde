@@ -91,11 +91,11 @@ namespace robot
         #region Initialization String
         private const string InitializationString =
            "AQAAACIAAABodHRwczovL215aW5kdXN0cnk0MC5jb20vVUEvcm9ib3Qv/////wRggAIBAAAAAQARAAAA" +
-           "Sm9pbnRUeXBlSW5zdGFuY2UBAZk6AQGZOpk6AAD/////BQAAABVgiQoCAAAA//8JAAAASm9pbnROYW1l" +
-           "AQGaOgAuAESaOgAAAAz/////AQH/////AAAAABVgiQoCAAAA//8IAAAAUG9zaXRpb24BAZs6AC8AP5s6" +
-           "AAAAC/////8BAf////8AAAAAFWCJCgIAAAD//wgAAABWZWxvY2l0eQEBnDoALwA/nDoAAAAL/////wEB" +
-           "/////wAAAAAVYIkKAgAAAP//BwAAAEN1cnJlbnQBAZ06AC8AP506AAAAC/////8BAf////8AAAAAFWCJ" +
-           "CgIAAAD//wsAAABUZW1wZXJhdHVyZQEBnjoALwA/njoAAAAL/////wEB/////wAAAAA=";
+           "Sm9pbnRUeXBlSW5zdGFuY2UBAZk6AQGZOpk6AAD/////BQAAABVgiQoCAAAAAQAJAAAASm9pbnROYW1l" +
+           "AQGaOgAuAESaOgAAAAz/////AQH/////AAAAABVgiQoCAAAAAQAIAAAAUG9zaXRpb24BAZs6AC8AP5s6" +
+           "AAAAC/////8BAf////8AAAAAFWCJCgIAAAABAAgAAABWZWxvY2l0eQEBnDoALwA/nDoAAAAL/////wEB" +
+           "/////wAAAAAVYIkKAgAAAAEABwAAAEN1cnJlbnQBAZ06AC8AP506AAAAC/////8BAf////8AAAAAFWCJ" +
+           "CgIAAAABAAsAAABUZW1wZXJhdHVyZQEBnjoALwA/njoAAAAL/////wEB/////wAAAAA=";
         #endregion
         #endif
         #endregion
@@ -253,7 +253,7 @@ namespace robot
 
             switch (browseName.Name)
             {
-                case .BrowseNames.JointName:
+                case robot.BrowseNames.JointName:
                 {
                     if (createOrReplace)
                     {
@@ -274,7 +274,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Position:
+                case robot.BrowseNames.Position:
                 {
                     if (createOrReplace)
                     {
@@ -295,7 +295,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Velocity:
+                case robot.BrowseNames.Velocity:
                 {
                     if (createOrReplace)
                     {
@@ -316,7 +316,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Current:
+                case robot.BrowseNames.Current:
                 {
                     if (createOrReplace)
                     {
@@ -337,7 +337,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Temperature:
+                case robot.BrowseNames.Temperature:
                 {
                     if (createOrReplace)
                     {
@@ -434,9 +434,9 @@ namespace robot
         #region Initialization String
         private const string InitializationString =
            "AQAAACIAAABodHRwczovL215aW5kdXN0cnk0MC5jb20vVUEvcm9ib3Qv/////wRggAIBAAAAAQAPAAAA" +
-           "VENQVHlwZUluc3RhbmNlAQGfOgEBnzqfOgAA/////wMAAAAXYIkKAgAAAP//CAAAAFBvc2l0aW9uAQGg" +
-           "OgAvAD+gOgAAAAsBAAAAAQAAAAYAAAABAf////8AAAAAF2CJCgIAAAD//wUAAABTcGVlZAEBoToALwA/" +
-           "oToAAAALAQAAAAEAAAAGAAAAAQH/////AAAAABdgiQoCAAAA//8FAAAARm9yY2UBAaI6AC8AP6I6AAAA" +
+           "VENQVHlwZUluc3RhbmNlAQGfOgEBnzqfOgAA/////wMAAAAXYIkKAgAAAAEACAAAAFBvc2l0aW9uAQGg" +
+           "OgAvAD+gOgAAAAsBAAAAAQAAAAYAAAABAf////8AAAAAF2CJCgIAAAABAAUAAABTcGVlZAEBoToALwA/" +
+           "oToAAAALAQAAAAEAAAAGAAAAAQH/////AAAAABdgiQoCAAAAAQAFAAAARm9yY2UBAaI6AC8AP6I6AAAA" +
            "CwEAAAABAAAABgAAAAEB/////wAAAAA=";
         #endregion
         #endif
@@ -547,7 +547,7 @@ namespace robot
 
             switch (browseName.Name)
             {
-                case .BrowseNames.Position:
+                case robot.BrowseNames.Position:
                 {
                     if (createOrReplace)
                     {
@@ -568,7 +568,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Speed:
+                case robot.BrowseNames.Speed:
                 {
                     if (createOrReplace)
                     {
@@ -589,7 +589,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.Force:
+                case robot.BrowseNames.Force:
                 {
                     if (createOrReplace)
                     {
@@ -684,8 +684,8 @@ namespace robot
         #region Initialization String
         private const string InitializationString =
            "AQAAACIAAABodHRwczovL215aW5kdXN0cnk0MC5jb20vVUEvcm9ib3Qv/////wRggAIBAAAAAQARAAAA" +
-           "Um9ib3RUeXBlSW5zdGFuY2UBAaM6AQGjOqM6AAD/////AgAAABVgiQoCAAAA//8QAAAATWFudWZhY3R1" +
-           "cmVyTmFtZQEBpDoALgBEpDoAAAAM/////wEB/////wAAAAAVYIkKAgAAAP//CQAAAE1vZGVsTmFtZQEB" +
+           "Um9ib3RUeXBlSW5zdGFuY2UBAaM6AQGjOqM6AAD/////AgAAABVgiQoCAAAAAQAQAAAATWFudWZhY3R1" +
+           "cmVyTmFtZQEBpDoALgBEpDoAAAAM/////wEB/////wAAAAAVYIkKAgAAAAEACQAAAE1vZGVsTmFtZQEB" +
            "pToALgBEpToAAAAM/////wEB/////wAAAAA=";
         #endregion
         #endif
@@ -772,7 +772,7 @@ namespace robot
 
             switch (browseName.Name)
             {
-                case .BrowseNames.ManufacturerName:
+                case robot.BrowseNames.ManufacturerName:
                 {
                     if (createOrReplace)
                     {
@@ -793,7 +793,7 @@ namespace robot
                     break;
                 }
 
-                case .BrowseNames.ModelName:
+                case robot.BrowseNames.ModelName:
                 {
                     if (createOrReplace)
                     {

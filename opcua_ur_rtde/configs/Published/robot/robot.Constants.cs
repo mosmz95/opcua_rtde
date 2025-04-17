@@ -46,39 +46,39 @@ namespace robot
     public static partial class Objects
     {
         /// <summary>
-        /// The identifier for the JointsSet Object.
-        /// </summary>
-        public const uint JointsSet = 15014;
-
-        /// <summary>
         /// The identifier for the Base Object.
         /// </summary>
-        public const uint Base = 15015;
+        public const uint Base = 15014;
 
         /// <summary>
         /// The identifier for the Shoulder Object.
         /// </summary>
-        public const uint Shoulder = 15021;
+        public const uint Shoulder = 15020;
 
         /// <summary>
         /// The identifier for the Elbow Object.
         /// </summary>
-        public const uint Elbow = 15027;
+        public const uint Elbow = 15026;
 
         /// <summary>
         /// The identifier for the Wrist1 Object.
         /// </summary>
-        public const uint Wrist1 = 15033;
+        public const uint Wrist1 = 15032;
 
         /// <summary>
         /// The identifier for the Wrist2 Object.
         /// </summary>
-        public const uint Wrist2 = 15039;
+        public const uint Wrist2 = 15038;
 
         /// <summary>
         /// The identifier for the Wrist3 Object.
         /// </summary>
-        public const uint Wrist3 = 15045;
+        public const uint Wrist3 = 15044;
+
+        /// <summary>
+        /// The identifier for the JointsSet Object.
+        /// </summary>
+        public const uint JointsSet = 15050;
 
         /// <summary>
         /// The identifier for the TCP Object.
@@ -178,152 +178,152 @@ namespace robot
         /// <summary>
         /// The identifier for the Base_JointName Variable.
         /// </summary>
-        public const uint Base_JointName = 15016;
+        public const uint Base_JointName = 15015;
 
         /// <summary>
         /// The identifier for the Base_Position Variable.
         /// </summary>
-        public const uint Base_Position = 15017;
+        public const uint Base_Position = 15016;
 
         /// <summary>
         /// The identifier for the Base_Velocity Variable.
         /// </summary>
-        public const uint Base_Velocity = 15018;
+        public const uint Base_Velocity = 15017;
 
         /// <summary>
         /// The identifier for the Base_Current Variable.
         /// </summary>
-        public const uint Base_Current = 15019;
+        public const uint Base_Current = 15018;
 
         /// <summary>
         /// The identifier for the Base_Temperature Variable.
         /// </summary>
-        public const uint Base_Temperature = 15020;
+        public const uint Base_Temperature = 15019;
 
         /// <summary>
         /// The identifier for the Shoulder_JointName Variable.
         /// </summary>
-        public const uint Shoulder_JointName = 15022;
+        public const uint Shoulder_JointName = 15021;
 
         /// <summary>
         /// The identifier for the Shoulder_Position Variable.
         /// </summary>
-        public const uint Shoulder_Position = 15023;
+        public const uint Shoulder_Position = 15022;
 
         /// <summary>
         /// The identifier for the Shoulder_Velocity Variable.
         /// </summary>
-        public const uint Shoulder_Velocity = 15024;
+        public const uint Shoulder_Velocity = 15023;
 
         /// <summary>
         /// The identifier for the Shoulder_Current Variable.
         /// </summary>
-        public const uint Shoulder_Current = 15025;
+        public const uint Shoulder_Current = 15024;
 
         /// <summary>
         /// The identifier for the Shoulder_Temperature Variable.
         /// </summary>
-        public const uint Shoulder_Temperature = 15026;
+        public const uint Shoulder_Temperature = 15025;
 
         /// <summary>
         /// The identifier for the Elbow_JointName Variable.
         /// </summary>
-        public const uint Elbow_JointName = 15028;
+        public const uint Elbow_JointName = 15027;
 
         /// <summary>
         /// The identifier for the Elbow_Position Variable.
         /// </summary>
-        public const uint Elbow_Position = 15029;
+        public const uint Elbow_Position = 15028;
 
         /// <summary>
         /// The identifier for the Elbow_Velocity Variable.
         /// </summary>
-        public const uint Elbow_Velocity = 15030;
+        public const uint Elbow_Velocity = 15029;
 
         /// <summary>
         /// The identifier for the Elbow_Current Variable.
         /// </summary>
-        public const uint Elbow_Current = 15031;
+        public const uint Elbow_Current = 15030;
 
         /// <summary>
         /// The identifier for the Elbow_Temperature Variable.
         /// </summary>
-        public const uint Elbow_Temperature = 15032;
+        public const uint Elbow_Temperature = 15031;
 
         /// <summary>
         /// The identifier for the Wrist1_JointName Variable.
         /// </summary>
-        public const uint Wrist1_JointName = 15034;
+        public const uint Wrist1_JointName = 15033;
 
         /// <summary>
         /// The identifier for the Wrist1_Position Variable.
         /// </summary>
-        public const uint Wrist1_Position = 15035;
+        public const uint Wrist1_Position = 15034;
 
         /// <summary>
         /// The identifier for the Wrist1_Velocity Variable.
         /// </summary>
-        public const uint Wrist1_Velocity = 15036;
+        public const uint Wrist1_Velocity = 15035;
 
         /// <summary>
         /// The identifier for the Wrist1_Current Variable.
         /// </summary>
-        public const uint Wrist1_Current = 15037;
+        public const uint Wrist1_Current = 15036;
 
         /// <summary>
         /// The identifier for the Wrist1_Temperature Variable.
         /// </summary>
-        public const uint Wrist1_Temperature = 15038;
+        public const uint Wrist1_Temperature = 15037;
 
         /// <summary>
         /// The identifier for the Wrist2_JointName Variable.
         /// </summary>
-        public const uint Wrist2_JointName = 15040;
+        public const uint Wrist2_JointName = 15039;
 
         /// <summary>
         /// The identifier for the Wrist2_Position Variable.
         /// </summary>
-        public const uint Wrist2_Position = 15041;
+        public const uint Wrist2_Position = 15040;
 
         /// <summary>
         /// The identifier for the Wrist2_Velocity Variable.
         /// </summary>
-        public const uint Wrist2_Velocity = 15042;
+        public const uint Wrist2_Velocity = 15041;
 
         /// <summary>
         /// The identifier for the Wrist2_Current Variable.
         /// </summary>
-        public const uint Wrist2_Current = 15043;
+        public const uint Wrist2_Current = 15042;
 
         /// <summary>
         /// The identifier for the Wrist2_Temperature Variable.
         /// </summary>
-        public const uint Wrist2_Temperature = 15044;
+        public const uint Wrist2_Temperature = 15043;
 
         /// <summary>
         /// The identifier for the Wrist3_JointName Variable.
         /// </summary>
-        public const uint Wrist3_JointName = 15046;
+        public const uint Wrist3_JointName = 15045;
 
         /// <summary>
         /// The identifier for the Wrist3_Position Variable.
         /// </summary>
-        public const uint Wrist3_Position = 15047;
+        public const uint Wrist3_Position = 15046;
 
         /// <summary>
         /// The identifier for the Wrist3_Velocity Variable.
         /// </summary>
-        public const uint Wrist3_Velocity = 15048;
+        public const uint Wrist3_Velocity = 15047;
 
         /// <summary>
         /// The identifier for the Wrist3_Current Variable.
         /// </summary>
-        public const uint Wrist3_Current = 15049;
+        public const uint Wrist3_Current = 15048;
 
         /// <summary>
         /// The identifier for the Wrist3_Temperature Variable.
         /// </summary>
-        public const uint Wrist3_Temperature = 15050;
+        public const uint Wrist3_Temperature = 15049;
 
         /// <summary>
         /// The identifier for the TCP_Position Variable.
@@ -361,11 +361,6 @@ namespace robot
     public static partial class ObjectIds
     {
         /// <summary>
-        /// The identifier for the JointsSet Object.
-        /// </summary>
-        public static readonly ExpandedNodeId JointsSet = new ExpandedNodeId(robot.Objects.JointsSet, robot.Namespaces.robot);
-
-        /// <summary>
         /// The identifier for the Base Object.
         /// </summary>
         public static readonly ExpandedNodeId Base = new ExpandedNodeId(robot.Objects.Base, robot.Namespaces.robot);
@@ -394,6 +389,11 @@ namespace robot
         /// The identifier for the Wrist3 Object.
         /// </summary>
         public static readonly ExpandedNodeId Wrist3 = new ExpandedNodeId(robot.Objects.Wrist3, robot.Namespaces.robot);
+
+        /// <summary>
+        /// The identifier for the JointsSet Object.
+        /// </summary>
+        public static readonly ExpandedNodeId JointsSet = new ExpandedNodeId(robot.Objects.JointsSet, robot.Namespaces.robot);
 
         /// <summary>
         /// The identifier for the TCP Object.
@@ -680,9 +680,24 @@ namespace robot
         public const string Base = "Base";
 
         /// <summary>
+        /// The BrowseName for the Current component.
+        /// </summary>
+        public const string Current = "Current";
+
+        /// <summary>
         /// The BrowseName for the Elbow component.
         /// </summary>
         public const string Elbow = "Elbow";
+
+        /// <summary>
+        /// The BrowseName for the Force component.
+        /// </summary>
+        public const string Force = "Force";
+
+        /// <summary>
+        /// The BrowseName for the JointName component.
+        /// </summary>
+        public const string JointName = "JointName";
 
         /// <summary>
         /// The BrowseName for the JointsSet component.
@@ -695,6 +710,21 @@ namespace robot
         public const string JointType = "JointType";
 
         /// <summary>
+        /// The BrowseName for the ManufacturerName component.
+        /// </summary>
+        public const string ManufacturerName = "ManufacturerName";
+
+        /// <summary>
+        /// The BrowseName for the ModelName component.
+        /// </summary>
+        public const string ModelName = "ModelName";
+
+        /// <summary>
+        /// The BrowseName for the Position component.
+        /// </summary>
+        public const string Position = "Position";
+
+        /// <summary>
         /// The BrowseName for the RobotType component.
         /// </summary>
         public const string RobotType = "RobotType";
@@ -703,6 +733,11 @@ namespace robot
         /// The BrowseName for the Shoulder component.
         /// </summary>
         public const string Shoulder = "Shoulder";
+
+        /// <summary>
+        /// The BrowseName for the Speed component.
+        /// </summary>
+        public const string Speed = "Speed";
 
         /// <summary>
         /// The BrowseName for the TCP component.
@@ -715,9 +750,19 @@ namespace robot
         public const string TCPType = "TCPType";
 
         /// <summary>
+        /// The BrowseName for the Temperature component.
+        /// </summary>
+        public const string Temperature = "Temperature";
+
+        /// <summary>
         /// The BrowseName for the UR5e component.
         /// </summary>
         public const string UR5e = "UR5e";
+
+        /// <summary>
+        /// The BrowseName for the Velocity component.
+        /// </summary>
+        public const string Velocity = "Velocity";
 
         /// <summary>
         /// The BrowseName for the Wrist1 component.
