@@ -199,7 +199,7 @@
 
         <References>
             <!-- Attach ur5e object to the root folder in serverspace -->
-            <Reference IsInverse="false"> 
+            <Reference IsInverse="true"> 
                 <ReferenceType>ua:Organizes</ReferenceType>
                 <TargetId>ua:ObjectsFolder</TargetId>
             </Reference>
