@@ -8,7 +8,7 @@
     TargetNamespace="https://myindustry40.com/UA/robot/"
     TargetXmlNamespace="https://myindustry40.com/UA/robot/"
     TargetVersion="0.0.1"
-    TargetPublicationDate="2025-04-07T00:00:00Z"
+    TargetPublicationDate="2025-04-17T00:00:00Z"
     xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
 
     <Namespaces>
@@ -45,125 +45,113 @@
         <Children>
             <Property SymbolicName="ROBOT:ManufacturerName" DataType="ua:String" ModellingRule="Mandatory" />
             <Property SymbolicName="ROBOT:ModelName" DataType="ua:String" ModellingRule="Mandatory" />
-            <!-- <Object SymbolicName="Joints" TypeName="robot:JointType" ValueRank="Array" ModellingRule="Mandatory" /> -->
-            <!-- <Object SymbolicName="JointsSet" TypeDefinition="ua:FolderType" ModellingRule="Mandatory" />
-            <Object SymbolicName="TCP" TypeName="robot:TCPType" ModellingRule="Mandatory" /> -->
         </Children>
     </ObjectType>
     
-    <!-- A container is defined to hold list of joints -->
-    <Object SymbolicName="ROBOT:JointsSet" TypeDefinition="ua:BaseObjectType">
-        <Description>Contains all instances of animals</Description>
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ua:ObjectsFolder</TargetId>
-            </Reference>
-        </References>
-    </Object>
+    
 
     <!-- Instantaition of joints -->
     <Object SymbolicName="ROBOT:Base" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+        
         <DisplayName>Base</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Base Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
     </Object>
 
     <Object SymbolicName="ROBOT:Shoulder" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Shoulder</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Shoulder Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
     </Object>
 
     <Object SymbolicName="ROBOT:Elbow" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Elbow</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Elbow Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist1" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
-
+        
         <DisplayName>Wrist1</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Wrist1 Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist2" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+        
         <DisplayName>Wrist2</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Wrist2 Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
     </Object>
 
     <Object SymbolicName="ROBOT:Wrist3" TypeDefinition="ROBOT:JointType">
-        <References>
-            <Reference IsInverse="false">
-                <ReferenceType>ua:Organizes</ReferenceType>
-                <TargetId>ROBOT:JointsSet</TargetId>
-            </Reference>
-        </References>
+       
         <DisplayName>Wrist3</DisplayName>
         <Children>
-            <Property SymbolicName="ROBOT:JointName"><Value><uax:String>Base</uax:String></Value></Property>
-            <Variable SymbolicName="ROBOT:Position"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Velocity"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Current"><Value><uax:Double>0.0</uax:Double></Value></Variable>
-            <Variable SymbolicName="ROBOT:Temperature"><Value><uax:Double>0.0</uax:Double></Value></Variable>
+            <Property SymbolicName="ROBOT:JointName"><DefaultValue><uax:String>Wrist3 Actuator</uax:String></DefaultValue></Property>
+            <Variable SymbolicName="ROBOT:Position"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Velocity"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Current"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
+            <Variable SymbolicName="ROBOT:Temperature"><DefaultValue><uax:Double>0.0</uax:Double></DefaultValue></Variable>
         </Children>
+    </Object>
+    
+    <!-- A container is defined to hold list of joints -->
+    <Object SymbolicName="ROBOT:JointsSet" TypeDefinition="ua:BaseObjectType">
+        <Description>Contains all instances of joints</Description>
+        <References>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Base</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Shoulder</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Elbow</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist1</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist2</TargetId>
+            </Reference>
+            <Reference IsInverse="false">
+                <ReferenceType>ua:HasComponent</ReferenceType>
+                <TargetId>ROBOT:Wrist3</TargetId>
+            </Reference>
+        </References>
     </Object>
 
     <!-- Instantaition of  tool center pose -->
@@ -171,34 +159,34 @@
         <DisplayName>TCP</DisplayName>
         <Children>
             <Variable SymbolicName="ROBOT:Position">
-                <Value>
+                <DefaultValue>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
-                </Value>
+                </DefaultValue>
             </Variable>
             <Variable SymbolicName="ROBOT:Speed">
-                <Value>
+                <DefaultValue>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
-                </Value>
+                </DefaultValue>
             </Variable>
             <Variable SymbolicName="ROBOT:Force">
-                <Value>
+                <DefaultValue>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
                     <uax:Double>0.0</uax:Double>
-                </Value>
+                </DefaultValue>
             </Variable>
         </Children>
     </Object>
@@ -210,6 +198,11 @@
         <Description>Universal Robots UR5e model</Description>
 
         <References>
+            <!-- Attach ur5e object to the root folder in serverspace -->
+            <Reference IsInverse="true"> 
+                <ReferenceType>ua:Organizes</ReferenceType>
+                <TargetId>ua:ObjectsFolder</TargetId>
+            </Reference>
             <Reference IsInverse="false">
                 <ReferenceType>ua:HasComponent</ReferenceType>
                 <TargetId>ROBOT:JointsSet</TargetId>
@@ -221,8 +214,8 @@
         </References>
 
         <Children>
-            <Property SymbolicName="ROBOT:ManufacturerName"><Value><uax:String>Universal Robots</uax:String></Value></Property>
-            <Property SymbolicName="ROBOT:ModelName"><Value><uax:String>UR5e</uax:String></Value></Property>
+            <Property SymbolicName="ROBOT:ManufacturerName"><DefaultValue><uax:String>Universal Robots</uax:String></DefaultValue></Property>
+            <Property SymbolicName="ROBOT:ModelName"><DefaultValue><uax:String>UR5e</uax:String></DefaultValue></Property>
         </Children>
     </Object>
 

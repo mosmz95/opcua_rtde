@@ -349,6 +349,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15015</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Base Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -372,6 +377,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15016</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -395,6 +405,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15017</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -418,6 +433,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15018</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -441,6 +461,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15019</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -481,6 +506,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15021</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Shoulder Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -504,6 +534,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15022</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -527,6 +562,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15023</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -550,6 +590,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15024</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -573,6 +618,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15025</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -613,6 +663,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15027</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Elbow Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -636,6 +691,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15028</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -659,6 +719,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15029</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -682,6 +747,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15030</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -705,6 +775,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15031</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -745,6 +820,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15033</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Wrist1 Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -768,6 +848,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15034</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -791,6 +876,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15035</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -814,6 +904,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15036</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -837,6 +932,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15037</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -877,6 +977,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15039</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Wrist2 Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -900,6 +1005,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15040</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -923,6 +1033,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15041</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -946,6 +1061,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15042</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -969,6 +1089,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15043</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -1009,6 +1134,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15045</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Wrist3 Actuator</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1032,6 +1162,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15046</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -1055,6 +1190,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15047</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -1078,6 +1218,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15048</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -1101,6 +1246,11 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15049</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
@@ -1120,7 +1270,7 @@
     </uax:BrowseName>
     <uax:Description>
       <uax:Locale></uax:Locale>
-      <uax:Text>Contains all instances of animals</uax:Text>
+      <uax:Text>Contains all instances of joints</uax:Text>
     </uax:Description>
     <uax:ReferenceTypeId>
       <uax:Identifier>i=47</uax:Identifier>
@@ -1212,10 +1362,15 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15052</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
-      <uax:ValueRank>1</uax:ValueRank>
+      <uax:ValueRank>-1</uax:ValueRank>
       <uax:ArrayDimensions>6</uax:ArrayDimensions>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
@@ -1236,10 +1391,15 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15053</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
-      <uax:ValueRank>1</uax:ValueRank>
+      <uax:ValueRank>-1</uax:ValueRank>
       <uax:ArrayDimensions>6</uax:ArrayDimensions>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
@@ -1260,10 +1420,15 @@
         <uax:Identifier>i=63</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15054</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:Double>0</uax:Double>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=11</uax:Identifier>
       </uax:DataType>
-      <uax:ValueRank>1</uax:ValueRank>
+      <uax:ValueRank>-1</uax:ValueRank>
       <uax:ArrayDimensions>6</uax:ArrayDimensions>
       <uax:AccessLevel>1</uax:AccessLevel>
       <uax:UserAccessLevel>1</uax:UserAccessLevel>
@@ -1332,6 +1497,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15056</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>Universal Robots</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
@@ -1355,6 +1525,11 @@
         <uax:Identifier>i=68</uax:Identifier>
       </uax:TypeDefinitionId>
       <uax:NumericId>15057</uax:NumericId>
+      <uax:Value>
+        <uax:Value>
+          <uax:String>UR5e</uax:String>
+        </uax:Value>
+      </uax:Value>
       <uax:DataType>
         <uax:Identifier>i=12</uax:Identifier>
       </uax:DataType>
