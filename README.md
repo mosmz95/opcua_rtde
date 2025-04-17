@@ -30,3 +30,8 @@ Having the generated robot.NodeSet2.xml, one can use the node set compiler to ge
 python3 ./nodeset_compiler.py --types-array=UA_TYPES --existing ../../deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml --xml robot.NodeSet2.xml robot
 ```
 
+The server from the generated header files has been started and using the UaExpert as a client you can see the information model of UR5e as below:
+
+<p align="center">
+  <img src="images/ur5e_object_in_UaExpert.png" alt="Image 1" width="480"/></a>
+</p>
