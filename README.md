@@ -33,5 +33,5 @@ python3 ./nodeset_compiler.py --types-array=UA_TYPES --existing ../../deps/ua-no
 The server from the generated header files has been started and using the UaExpert as a client you can see the information model of UR5e as below:
 
 <p align="center">
-  <img src="images/ur5e_object_in_UaExpert.png" alt="Image 1" width="480"/></a>
+  <img src="images/ur5e_object_in_UaExpert.png" width="550" width="340"/></a>
 </p>
